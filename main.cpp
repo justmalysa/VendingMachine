@@ -122,11 +122,11 @@ public:
 		}
 		if (change_total != 0)
 		{
-			cout << "Brak monet na ca³kowite wydanie reszty" << endl;
+			cout << "Brak monet na calkowite wydanie reszty" << endl;
 		}
 		cout << endl;
 	}
-	
+
 	void giveCoins(vector<int> coins_vector)
 	{
 		for (size_t i = 0; i < coins_vector.size(); i++)
@@ -180,7 +180,7 @@ public:
 		for (size_t i = 0; i < product_list.size(); i++)
 		{
 			int count = countChars() - product_list[i].name.size();
-			cout  << product_list[i].name  << generateSpaceVector(count) << product_list[i].price 
+			cout  << product_list[i].name  << generateSpaceVector(count) << product_list[i].price
 			<< generateSpaceVector(column_2.length()- PRICE_LENGTH) <<  product_list[i].amount << endl;
 		}
 	}
@@ -213,7 +213,7 @@ public:
 	Payment:
 		string choice = getInput({ "Gotowka","Karta" }, "Jesli chcesz wybrac platnosc gotowka wpisz Gotowka, jesli chcesz wybrac platnosc karta wybierz Karta");
 		Product product = m_product_magazine.getProductByName(product_name);
-		cout << "Cena produktu to: " << product.price << "gr. " << endl << "Dokonaj platnosci"<< endl;
+		cout << "Cena produktu to: " << product.price << "gr. " << endl << "Dokonaj platnosci" << endl;
 		if (choice == "Gotowka")
 		{
 			vector<int> coins_vector;
